@@ -1,12 +1,13 @@
-@use 'sass:math' as math;
-@use './scss/media' as media;
-@import './scss/flex';
-@import './scss/variables';
+@use "sass:math" as math;
+@use "./scss/media" as media;
+@import "./scss/flex";
+@import "./scss/variables";
 
-@import './scss/details';
-@import './scss/section';
-@import './scss/menu-icon';
-@import './scss/text-on-path';
+@import "./scss/details";
+@import "./scss/section";
+@import "./scss/menu-icon";
+@import "./scss/text-on-path";
+@import "./scss/responsive";
 
 html,
 body {
@@ -15,7 +16,7 @@ body {
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 
   display: flex;
   flex-direction: column;
@@ -60,12 +61,6 @@ header.nav {
     line-height: 1;
   }
 
-  @include media.mobile {
-    h2 {
-      display: none;
-    }
-  }
-
   h1 {
     font-size: 28px;
     line-height: 32px;
@@ -94,6 +89,8 @@ main {
 }
 
 .details {
+  display: flex;
+
   figure {
     margin: 0;
   }

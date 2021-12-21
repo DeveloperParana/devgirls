@@ -1,0 +1,30 @@
+@import "./media";
+
+header.nav {
+    @include media.mobile {
+        h2 {
+            display: none;
+        }
+    }
+}
+
+@include media.desktop {
+    details.details .details__content > div {
+        flex-direction: row;
+        p {
+            font-size: 1.5rem;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .details__content {
+        padding: 2rem;
+    }
+
+    details .details__summary {
+        font-size: 25px;
+    }
+}
