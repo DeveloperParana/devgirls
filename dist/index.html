@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="DevParaná & Dev Girls">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="/index.cc221f2a.js" defer=""></script>
+  <link rel="stylesheet" href="/index.e526265a.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700&display=swap" rel="stylesheet">
+
+  <title>DevParaná & DevGirls</title>
+
+</head>
+
+<body itemscope="https://schema.org/Organization">
+  <header class="nav" itemprop="nav">
+    <a href="#" class="logo" itemprop="url">
+      <img width="52" height="56" src="/dev-parana.a5dbca49.svg" alt="Logo" itemprop="logo">
+      <div>
+        <h1 itemprop="name">DevParaná</h1>
+        <h2 itemprop="slogan">Member Experience</h2>
+      </div>
+    </a>
+
+    <input type="checkbox" id="menu-btn">
+    <label class="menu-icon" for="menu-btn">
+      <span class="navicon"></span>
+    </label>
+  </header>
+
+
+
+  <svg width="100%" height="160px" viewbox="0 0 1098.72 89.55">
+    <path id="curve" fill="transparent"
+      d="M0.17,0.23c0,0,105.85,77.7,276.46,73.2s243.8-61.37,408.77-54.05c172.09,7.64,213.4,92.34,413.28,64.19"></path>
+    <text width="100%" style="transform:translate3d(0,0,0);">
+      <textpath style="transform:translate3d(0,0,0);" alignment-baseline="top" xlink:href="#curve" startoffset="1200px"
+        id="text-path">*The pictures are not technically selfies.</textpath>
+    </text>
+  </svg>
+
+  <svg width="100%" height="160px" viewbox="0 0 1098.72 89.55">
+    <path id="curve" fill="transparent"
+      d="M0.17,0.23c0,0,105.85,77.7,276.46,73.2s243.8-61.37,408.77-54.05c172.09,7.64,213.4,92.34,413.28,64.19"></path>
+    <text width="100%" style="transform:translate3d(0,0,0);">
+      <textpath style="transform:translate3d(0,0,0);" alignment-baseline="top" xlink:href="#curve" startoffset="1200px"
+        id="text-path">*The pictures are not technically selfies.</textpath>
+    </text>
+  </svg>
+
+  <svg class="hidden">
+    <defs>
+      <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+        <fegaussianblur stddeviation="0" result="blur" data-min-deviation="0" data-max-deviation="10"></fegaussianblur>
+        <femerge>
+          <femergenode in="blur"></femergenode>
+        </femerge>
+      </filter>
+      <filter id="blur2" x="-30%" y="-30%" width="160%" height="160%">
+        <fegaussianblur in="SourceAlpha" stddeviation="0" result="glow" data-min-deviation="0" data-max-deviation="30">
+        </fegaussianblur>
+        <fecolormatrix result="bluralpha" type="matrix" values="0 -1 0 0 0 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1.8 0 ">
+        </fecolormatrix>
+        <feoffset in="bluralpha" dx="0.000000" dy="0.000000" result="offsetBlur"></feoffset>
+        <femerge>
+          <femergenode in="offsetBlur"></femergenode>
+          <femergenode in="SourceGraphic"></femergenode>
+        </femerge>
+      </filter>
+      <filter id="distortionFilter">
+        <feturbulence type="fractalNoise" basefrequency="0.01 0.03" numoctaves="2" seed="2" stitchtiles="stitch" x="0%"
+          y="0%" width="100%" height="100%" result="noise"></feturbulence>
+        <fedisplacementmap in="SourceGraphic" in2="noise" scale="0" data-min-scale="0" data-max-scale="100"
+          xchannelselector="R" ychannelselector="B" x="0%" y="0%" width="100%" height="100%"
+          filterunits="userSpaceOnUse"></fedisplacementmap>
+      </filter>
+      <filter id="distortionFilter2">
+        <fegaussianblur stddeviation="10" result="glow"></fegaussianblur>
+        <feturbulence type="fractalNoise" basefrequency="0 0.1" numoctaves="2" seed="2" stitchtiles="noStitch" x="-30%"
+          y="-30%" width="160%" height="160%" result="noise"></feturbulence>
+        <fedisplacementmap in="SourceGraphic" in2="noise" scale="0" data-min-scale="0" data-max-scale="50"
+          xchannelselector="R" ychannelselector="B" x="-30%" y="-30%" width="160%" height="160%"
+          filterunits="userSpaceOnUse" result="displacement"></fedisplacementmap>
+        <femerge>
+          <femergenode in="glow"></femergenode>
+          <femergenode in="displacement"></femergenode>
+        </femerge>
+      </filter>
+    </defs>
+  </svg>
+
+  <main>
+
+    <section class="section">
+      <h2>Comunidade</h2>
+      <p>
+        Além de unir pessoas e compartilhar o conhecimento buscamos incentivar mais mulheres a palestrar
+      </p>
+    </section>
+
+
+    <section class="section">
+
+      <picture class="flex flex-column">
+        <source media="(max-width: 600px)" srcset="/mentoria.c08e1a0a.svg">
+        <img src="/mentoria.c08e1a0a.svg" alt="Mentoria">
+      </picture>
+
+      <div>
+        <h2>Mentoria</h2>
+        <p>
+          Mentoria: Local onde mulheres cadastram para palestrar e terão outras pessoas para poder mentorar nesse
+          processo
+          que pode ser tão desafiador
+        </p>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <h2>Dicas Rápidas</h2>
+      <p>Para começar a palestrar para ontem temos algumas dicas</p>
+    </section>
+
+
+    <div class="text-on-path">
+      <svg class="svgtext svgtext--1" data-filter-type="blur" width="100%" preserveaspectratio="xMidYMid meet"
+        viewbox="0 0 1000 200">
+        <path id="text-curve1" d="M 0 100 Q 250 200 500 100 Q 750 0 1000 100" fill="none"></path>
+        <text filter="url(#blur)">
+          <textpath href="#text-curve1">
+            Como palestrar pode ser desafiador
+          </textpath>
+        </text>
+      </svg>
+      <svg class="svgtext svgtext--2" data-filter-type="blur" width="100%" preserveaspectratio="xMidYMid meet"
+        viewbox="0 0 1000 200">
+        <path id="text-curve11" d="M 0 100 Q 250 0 500 100 Q 750 200 1000 100" fill="none"></path>
+        <text filter="url(#blur2)">
+          <textpath href="#text-curve11">
+            buscamos unir pessoas 
+            <!-- Onde mulheres cadastram para palestrar onde receberão todo o apoio necessário. E todos podem apoiar mulheres
+            nesse processo. -->
+          </textpath>
+        </text>
+      </svg>
+      <svg class="svgtext svgtext--3" data-filter-type="blur" width="100%" preserveaspectratio="xMidYMid meet"
+        viewbox="0 0 1000 200">
+        <path id="text-curve11" d="M 0 100 Q 250 0 500 100 Q 750 200 1000 100" fill="none"></path>
+        <text filter="url(#blur2)">
+          <textpath href="#text-curve11">
+            por meio de um programa de mentoria
+            <!-- Onde mulheres cadastram para palestrar onde receberão todo o apoio necessário. E todos podem apoiar mulheres
+            nesse processo. -->
+          </textpath>
+        </text>
+      </svg>
+    </div>
+
+
+    <section class="details-group">
+      <details class="details">
+        <summary class="details__summary">
+          1° Escolha um assunto
+        </summary>
+        <div class="details__content flex flex__row--align-center flex__gap--64">
+          <div>
+            <p>
+              A primeira etapa da Técnica Feynman é escrever o tópico escolhido no topo de uma página. Em seguida, anote
+              tudo o que sabe sobre ele, e adicione sempre que aprender algo novo. A melhor forma de levar esse primeiro
+              passo é escrever com termos simples. Pense que você está explicando o assunto para uma criança, por
+              exemplo. Ou seja: utilize vocabulário básico e faça conexões simples de entender.
+            </p>
+            <p>
+              Jargões e termos complicados podem mascarar o seu nível de aprendizado, até para você mesmo. Escrevendo a
+              ideia com linguagem clara, você se ”força” a entender o bastante para conseguir simplificar as relações.
+              Não tem problema se isso parece difícil. Tente identificar os pontos onde você falha na compreensão, isso
+              enriquece o aprendizado.
+            </p>
+          </div>
+          <figure>
+            <img src="/escolha-um-assunto.d97c41f5.svg" alt="Escolha um assunto" class="details__image">
+          </figure>
+        </div>
+      </details>
+
+      <details class="details">
+        <summary class="details__summary">
+          2° Ensine ou finja ensinar para uma criança
+        </summary>
+        <div class="details__content flex flex__row--align-center flex__gap--64">
+          <figure>
+            <img src="/ensine-ou-finja-ensinar.aa7ff8dc.svg" alt="Ensine ou finja ensinar">
+          </figure>
+          <div>
+            <p>
+              A ideia é realmente ensinar, não importa se você tenha um público, ou não.
+            </p>
+            <p>
+              O importante é explicar o tópico em termos de fácil compreensão. Assim, você consolida o que entendeu até
+              então e visualiza com facilidade o que ainda não tem clareza.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <details class="details">
+        <summary class="details__summary">
+          3° Identifique os "buracos" na própria compreensão
+        </summary>
+        <div class="details__content flex flex__row--align-center flex__gap--64">
+          <div>
+            <p>
+              A partir da sua tentativa de explicação para uma outra pessoa, você vai perceber os buracos no próprio
+              aprendizado, segundo a Técnica Feynman. Revisite esses pontos e volte às suas fontes de informação até que
+              consiga explicar o conceito completamente.
+            </p>
+          </div>
+          <figure>
+            <img src="/identifique-lacunas-na-compreensao.96c3d41c.svg" alt="Identifique lacunas na compreensão">
+          </figure>
+        </div>
+      </details>
+
+      <details class="details">
+        <summary class="details__summary">
+          4° Revise, organize e simplifique
+        </summary>
+        <div class="details__content flex flex__row--align-center flex__gap--64">
+          <figure>
+            <img src="/revise-organize-simplifique.2775b843.svg" alt="Revise, organize e simplifique">
+          </figure>
+          <div>
+            <p>
+              Revise seu trabalho até então enquanto simplifica ainda mais a linguagem (tenha certeza de estar
+              utilizando suas próprias palavras e não jargões do material que estudou). Ilustre com exemplos e, se
+              necessário, conecte conceitos e faça analogias para fortalecer sua compreensão. O objetivo é organizar
+              todo o conteúdo em uma história simples que flui.
+            </p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section class="section">
+      <h2>Crescimento profissional</h2>
+      <p>Beneficios por palestrar ou ajudar alguém</p>
+    </section>
+
+
+
+    <section class="details-group">
+      <details class="details">
+        <summary class="details__summary">
+          1° Escolha um assunto
+        </summary>
+        <div class="details__content flex flex__row--align-center flex__gap--64">
+          <div>
+            <p>
+              A primeira etapa da Técnica Feynman é escrever o tópico escolhido no topo de uma página. Em seguida, anote
+              tudo o que sabe sobre ele, e adicione sempre que aprender algo novo. A melhor forma de levar esse primeiro
+              passo é escrever com termos simples. Pense que você está explicando o assunto para uma criança, por
+              exemplo. Ou seja: utilize vocabulário básico e faça conexões simples de entender.
+            </p>
+            <p>
+              Jargões e termos complicados podem mascarar o seu nível de aprendizado, até para você mesmo. Escrevendo a
+              ideia com linguagem clara, você se ”força” a entender o bastante para conseguir simplificar as relações.
+              Não tem problema se isso parece difícil. Tente identificar os pontos onde você falha na compreensão, isso
+              enriquece o aprendizado.
+            </p>
+          </div>
+          <figure>
+            <img src="/escolha-um-assunto.d97c41f5.svg" alt="Escolha um assunto" class="details__image">
+          </figure>
+        </div>
+      </details>
+
+      <details class="details">
+        <summary class="details__summary">
+          2° Ensine ou finja ensinar para uma criança
+        </summary>
+        <div class="details__content flex flex__row--align-center flex__gap--64">
+          <figure>
+            <img src="/ensine-ou-finja-ensinar.aa7ff8dc.svg" alt="Ensine ou finja ensinar">
+          </figure>
+          <div>
+            <p>
+              A ideia é realmente ensinar, não importa se você tenha um público, ou não.
+            </p>
+            <p>
+              O importante é explicar o tópico em termos de fácil compreensão. Assim, você consolida o que entendeu até
+              então e visualiza com facilidade o que ainda não tem clareza.
+            </p>
+          </div>
+        </div>
+      </details>
+
+      <details class="details">
+        <summary class="details__summary">
+          3° Identifique os "buracos" na própria compreensão
+        </summary>
+        <div class="details__content flex flex__row--align-center flex__gap--64">
+          <div>
+            <p>
+              A partir da sua tentativa de explicação para uma outra pessoa, você vai perceber os buracos no próprio
+              aprendizado, segundo a Técnica Feynman. Revisite esses pontos e volte às suas fontes de informação até que
+              consiga explicar o conceito completamente.
+            </p>
+          </div>
+          <figure>
+            <img src="/identifique-lacunas-na-compreensao.96c3d41c.svg" alt="Identifique lacunas na compreensão">
+          </figure>
+        </div>
+      </details>
+
+      <details class="details">
+        <summary class="details__summary">
+          4° Revise, organize e simplifique
+        </summary>
+        <div class="details__content flex flex__row--align-center flex__gap--64">
+          <figure>
+            <img src="/revise-organize-simplifique.2775b843.svg" alt="Revise, organize e simplifique">
+          </figure>
+          <div>
+            <p>
+              Revise seu trabalho até então enquanto simplifica ainda mais a linguagem (tenha certeza de estar
+              utilizando suas próprias palavras e não jargões do material que estudou). Ilustre com exemplos e, se
+              necessário, conecte conceitos e faça analogias para fortalecer sua compreensão. O objetivo é organizar
+              todo o conteúdo em uma história simples que flui.
+            </p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+
+  </main>
+
+
+
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>

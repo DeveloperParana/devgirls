@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://devparana.surge.sh/sitemap.xml

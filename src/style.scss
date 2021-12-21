@@ -1,0 +1,108 @@
+@use 'sass:math' as math;
+@use './scss/media' as media;
+@import './scss/flex';
+@import './scss/variables';
+
+@import './scss/details';
+@import './scss/section';
+@import './scss/menu-icon';
+@import './scss/text-on-path';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  background-color: $color-purple-100;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+h6 {
+  color: $color-green-600;
+}
+
+header.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #ffffff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+
+  padding: 10px;
+  gap: 20px;
+
+  a.logo {
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 20px;
+  }
+
+  h1,
+  h2 {
+    margin: 0;
+    line-height: 1;
+  }
+
+  @include media.mobile {
+    h2 {
+      display: none;
+    }
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 700;
+    color: $color-green-500;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 23px;
+    font-weight: 500;
+    color: $color-green-500;
+  }
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: $color-green-500;
+}
+
+main {
+  flex: 1;
+}
+
+.details {
+  figure {
+    margin: 0;
+  }
+  p {
+    color: $color-surface-500;
+    font-size: $typography-paragraph-28-font-size;
+    font-weight: $typography-paragraph-28-font-weight;
+    font-style: $typography-paragraph-28-font-style;
+    letter-spacing: $typography-paragraph-28-letter-spacing;
+    line-height: "#{$typography-paragraph-28-line-height}px";
+  }
+}
