@@ -7,12 +7,13 @@
   <meta name="description" content="DevParaná & Dev Girls">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script type="module" src="main.ts"></script>
-  <link rel="stylesheet" href="style.scss">
-
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./style.scss">
+  <script type="module" src="./main.ts"></script>
 
   <title>DevParaná & DevGirls</title>
 
@@ -241,7 +242,7 @@
         <path id="text-curve1" d="M 0 100 Q 250 200 500 100 Q 750 0 1000 100" fill="none" />
         <text filter="url(#blur)">
           <textPath href="#text-curve1">
-            Como palestrar pode ser desafiador, buscamos unir pessoas por meio de um programa de mentoria.
+            Sabemos que palestra pode ser desafiador, sendo assim...
           </textPath>
         </text>
       </svg>
@@ -250,12 +251,31 @@
         <path id="text-curve11" d="M 0 100 Q 250 0 500 100 Q 750 200 1000 100" fill="none" />
         <text filter="url(#blur2)">
           <textPath href="#text-curve11">
-            Onde mulheres cadastram para palestrar onde receberão todo o apoio necessário. E todos podem apoiar mulheres
-            nesse processo.
+            Buscamos unir pessoas por meio de um programa de mentoria.
           </textPath>
         </text>
       </svg>
     </div>
+
+
+    <section class="section">
+      <h2>Calendário</h2>
+      <p>Qual o melhor dia pra você participar?</p>
+
+      <mentoring-calendar></mentoring-calendar>
+    </section>
+
+
+    <section class="section">
+      <h2>Participem por aqui</h2>
+      <p>Preenchendo este formulário você se candidata a participar do programa de mentoria para mulheres</p>
+
+      <h1>Form</h1>
+    </section>
+
+    <section class="section">
+      <img src="assets/logos/devgirls.svg" alt="DevGirls">
+    </section>
   </main>
 
   <footer>

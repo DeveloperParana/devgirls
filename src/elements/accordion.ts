@@ -1,27 +1,35 @@
 import { Details } from './details'
 
 export class Accordion {
-  closeAllOnExpandEnabled = true;
+  closeAllOnExpandEnabled = true
 
   constructor(public detailsList: Details[]) {
-    
     this.detailsList.forEach((details) => {
-      details.el.addEventListener('expand', ({ detail }: CustomEvent<string>) => {
+      details.el.addEventListener('expand', ({ detail }) => {
         this.detailsList.forEach((details) => {
-          if (this.closeAllOnExpandEnabled && details.el.id !== detail) {
-            details.close()
+          const config: ScrollIntoViewOptions = { behavior: 'smooth', block: 'start' }
+          if (this.closeAllOnExpandEnabled) {
+            
+            if (details.el.id !== detail) {
+              details.close()
+            }
+
+            if (details.el.id === detail) {
+              setTimeout(() => details.el.scrollIntoView(config), 400);
+            }
           }
+          
         })
       })
     })
   }
 
   enableCloseAllOnExpand() {
-    this.closeAllOnExpandEnabled = true;
+    this.closeAllOnExpandEnabled = true
   }
 
   disableCloseAllOnExpand() {
-    this.closeAllOnExpandEnabled = false;
+    this.closeAllOnExpandEnabled = false
   }
 
   openAll() {

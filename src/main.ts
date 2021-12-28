@@ -1,4 +1,5 @@
 import { TextOnPath } from './animations/text-on-path';
+import { CalendarElement } from './elements/calendar'
 import { Accordion } from './elements/accordion';
 import { Details } from './elements/details'
 
@@ -6,6 +7,8 @@ const details = document.querySelectorAll('details')
 
 const detailsList = Array.from(details).map((el) => new Details(el));
 const accordion = new Accordion(detailsList);
+
+const calendar = new CalendarElement()
 
 const svgTexts = document.querySelectorAll<SVGElement>('svg.svgtext')
 svgTexts.forEach((el) => new TextOnPath(el))
@@ -20,7 +23,7 @@ const h = document.documentElement,
   sh = 'scrollHeight';
 
 document.addEventListener("scroll", e => {
-  console.log(textPath);
+  // console.log(textPath);
   
   let percent = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
   textPath?.setAttribute("start-offset", ((-percent * 40) + 1200) + '')
